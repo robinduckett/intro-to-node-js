@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>reveal.js</title>
+		<title>Event Driven Horizons: An intro to Node.js</title>
 
 		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,6 +15,36 @@
 		<link rel="stylesheet" href="css/main.css">
 
 		<link rel="stylesheet" href="lib/zenburn.css">
+
+    <style type="text/css">
+      #about .twitter {
+        margin-left: 50px;
+      }
+
+      #about .github {
+        margin-left: 79px;
+      }
+
+      #about label {
+        float: left;
+        display: block;
+        width: 4em;
+      }
+
+      .awesome {
+      	font-size: 56px;
+      		margin: 0 0 20px 0;
+	
+	color: #eee;
+	
+	font-family: 'League Gothic', sans-serif;
+	line-height: 0.9em;
+	letter-spacing: 0.02em;
+	
+	text-transform: uppercase;
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+      }
+    </style>
 	</head>
 	
 	<body>
@@ -24,8 +54,16 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3 class="inverted">A CSS 3D Slideshow</h3>
+					<h1>Event Driven Horizons</h1>
+					<h3 class="inverted">An intro to Node.js</h3>
+					<br />
+					<br />
+					<br />
+					<p style="margin-left: 200px; text-align: left" id="about">
+            <label>twitter:</label> <strong class="twitter">@robinduckett</strong><br />
+				    <label>email:</label> <strong>me@robinduckett.com</strong><br />
+            <label>github:</label> <strong class="github">robinduckett</strong>
+          </p>
 					<script>
 						// Delicously hacky. Look away.
 						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
@@ -34,173 +72,138 @@
 				</section>
 				
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is an easy to use, HTML based, presentation tool. You'll need a modern browser with 
-						support for CSS 3D transforms to see it in its full glory.
+					<h2>What is Node.js?</h2>
+					<p class="fragment">
+						Node is a command line thing<br />
+						<img src="./assets/img/terminal.png" style="width: 300px">
 					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
-				</section>
-				
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,<br/>
-							try pressing <a href="#/2/1">down</a>.
-						</p>
-						<a href="#/2/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Holistic Overview</h2>
-					<p>
-						Press <strong>SPACE</strong> to enter the slide overview!
-					</p>
-				</section>
-
-				<section>
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like:
-					</p>
-					<ul>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-state="blurred">
-					<h2>Global State</h2>
-					<p>
-						If you set <code>data-state="something"</code> on a slide, <code>"something"</code>
-						will be added as a class to the document element when the slide is open. Like the <code>"blur"</code> 
-						effect on this slide.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
-				
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code contenteditable>
-	var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined || 
-					document.body.style['MozPerspective'] !== undefined ||
-					document.body.style['perspective'] !== undefined;
-
-	function linkify( selector ) {
-	    if( supports3DTransforms ) {
-	        
-	        var nodes = document.querySelectorAll( selector );
-
-	        for( var i = 0, len = nodes.length; i < len; i++ ) {
-	            var node = nodes[i];
-
-	            if( !node.className || !node.className.match( /roll/g ) ) {
-	                node.className += ' roll';
-	                node.innerHTML = '<span data-title="'+ node.text +'">' + node.innerHTML + '</span>';
-	            }
-	        };
-	    }
-	}
-
-	linkify( 'a' );
+					<pre class="fragment"><code contenteditable>
+Haxdbook:~ rduckett$ node index.js args
 					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>What is Node.js?</h2>
+					<p>
+							<ul>
+								<li>Built on Google Chrome's V8 Javascript VM</li>
+								<li>Set of libraries geared towards I/O and Networking</li>
+								<li>Completely non-blocking</li>
+							</ul>
+					</p>	
+
+					<p class="fragment">
+						<img src="./assets/img/awesome_design_black.png" style="width: 300px"><br />
+						<span class="awesome">AWESOME</span>
+					</p>
 				</section>
 				
 				<section>
-					<h2>Intergalactic Interconnections</h2>
+					<h2>Features</h2>
+					<ul>
+						<li>Built in REPL (Read, Eval, Print, Loop)</li>
+						<li>CommonJS Module System (require, exports)</li>
+						<li>Just Javascript - No DOM.</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Things that are like Node.js</h2>
+					<p>Javascript - Ringo (based on Rhino.js)</p>
+					<p>Python - Twisted</p>
+					<p>Ruby - Event Machine, Goliath</p>
+					<p>.NET - Async Framework</p>
+					<p>Baby Pandas</p>
+					<img src="./assets/img/baby_panda.jpg" style="height: 200px" />
+				</section>
+
+				<section>
+					<h2>Pros and Cons</h2>
+					<h3>Pros</h3>
+					<ul>
+						<li>Extremely versatile and fast</li>
+						<li>Big support from big companies (Microsoft, Mozilla, Yahoo)</li>
+						<li>Javascripters already know how to use it</li>
+					</ul>
+					<img class="fragment" src="./assets/img/i_know_this.jpg">
+				</section>
+
+				<section>
+					<h2>Pros and Cons</h2>
+					<h3>Cons</h3>
+					<ul>
+						<li>Fairly steep learning curve</li>
+						<li>Not yet 1.0 (But is very mature)</li>
+						<li class="fragment">Isn't PHP</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>NPM and NVM</h2>
+					<br />
+					<br />
+					<h3>NVM (Node Version Manager)</h3>
+					<p>Download / Compile / Manage Node.JS versions</p>
+					<br />
+					<h3>NPM (Node Package Manager)</h3>
+					<p>Download / Install third party modules from the command line</p>
+				</section>
+
+				<section>
+					<h2>Built-in Node.js Modules</h2>
 					<p>
-						You can link between slides internally,<br/>
-						<a href="#/2/3">like this</a>.
+						<ul>
+							<li>HTTP Module</li>
+							<li>Timers</li>
+							<li>Process **</li>
+							<li>Event</li>
+							<li>Filesystem</li>
+							<li>Socket</li>
+							<li>Child Process</li>
+							<li>Loads more</li>
+						</ul>
+					</p>
+					<p>&nbsp;</p>
+					<p><small>** Not really a module</small></p>
+				</section>
+
+				<section>
+					<h2>Popular Third Party Node.js Modules</h2>
+					<p>
+							<ul>
+								<li>Request</li>
+								<li>ExpressJS</li>
+								<li>Socket.IO</li>
+							</ul>
 					</p>
 				</section>
 
 				<section>
-					<h2>Fragmented Views</h2>
-					<p>Hit the next arrow...</p>
-					<p class="fragment">... to step through ...</p>
-					<ol>
-						<li class="fragment"><code>any type</code></li>
-						<li class="fragment"><em>of view</em></li>
-						<li class="fragment"><strong>fragments</strong></li>
-					</ol>
+					<h2>&lt;Live Coding&gt;</h2>
+					<p>
+						<img src="./assets/img/use_vim.jpg" />
+					</p>
 				</section>
-				
+
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
-						<img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
-					</a>
+					<h2>&lt;/Live Coding&gt;</h2>
+
+					<p class="fragment">
+						Node is event-based.
+					</p>
+
+					<p class="fragment">
+						<img src="./assets/img/chuck.jpg" />
+					</p>
 				</section>
-				
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
-						<li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+
 				
 				<section>
 					<h1>THE END</h1>
-					<h3 class="inverted">BY Hakim El Hattab / hakim.se</h3>
+					<img src="./assets/img/hoers.gif"><br />
+					<h3 class="inverted">Any Questions?</h3>
+					<br />
+					<h3 class="inverted fragment">Any Questions Not about the horse?</h3>
 				</section>
 			</div>
 
@@ -232,7 +235,7 @@
 
 			Reveal.initialize({
 				// Display controls in the bottom right corner
-				controls: true,
+				controls: false,
 
 				// Display a presentation progress bar
 				progress: true,
